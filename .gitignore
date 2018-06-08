@@ -106,3 +106,6 @@ venv.bak/
 #PLY out temp files
 parsetab.py
 *.out
+
+#test outputs
+DBMS/*/

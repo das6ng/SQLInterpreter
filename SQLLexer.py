@@ -12,7 +12,6 @@ class SQLLexer(object):
     # reserved words
     reserved = {
         # data types
-        'boolean': 'BOOLEAN',
         'char': 'CHAR',
         'int': 'INT',
         'varchar': 'VARCHAR',
@@ -21,8 +20,6 @@ class SQLLexer(object):
         'all': 'ALL',
         'any': 'ANY',
         'null': 'NULL',
-        'true': 'TRUE',
-        'false': 'FALSE',
 
         # case operators
         'where': 'WHERE',
@@ -43,6 +40,7 @@ class SQLLexer(object):
         'databases': 'DATABASES',
         'delete': 'DELETE',
         'drop': 'DROP',
+        'exit': 'EXIT',
         'foreign': 'FOREIGN',
         'from': 'FROM',
         'insert': 'INSERT',
@@ -66,6 +64,7 @@ class SQLLexer(object):
     tokens = [
                  'NOTEQUALS',
                  'NUMBER',
+                 'BOOLEAN',
                  'ID',
                  'STRING',
              ] + list(reserved.values())
@@ -83,6 +82,15 @@ class SQLLexer(object):
     def t_NUMBER(self, t):
         r'\d+'
         t.value = int(t.value)
+        return t
+
+
+    def t_BOOLEAN(self, t):
+        r'[tT][rR][uU][eE]|[fF][aA][lL][sS][eE]'
+        if 'true' == str.lower(t.value):
+            t.value = True
+        elif 'false' == str.lower(t.value):
+            t.value = False
         return t
 
     def t_ID(self, t):
@@ -110,7 +118,7 @@ class SQLLexer(object):
         self.lexer = lex.lex(module=self, reflags=int(re.IGNORECASE | re.VERBOSE), **kwargs)
 
     # Test it output
-    def test(self,data):
+    def test(self, data):
         self.lexer.input(data)
         while True:
              tok = self.lexer.token()
@@ -184,7 +192,8 @@ SELECT * FROM STUDENT;
 UPDATE STUDENT SET SAGE=27,SSEX=1 WHERE SNAME='ZHANGSAN';
 SELECT * FROM STUDENT;
     '''
-    #data = 'true and false'
+    data = 'true and false sasas exit Quit'
+    #data = '1+2 true'
 
     # Build the lexer and try it out
     m = SQLLexer()
