@@ -62,11 +62,12 @@ class SQLLexer(object):
 
     # List of token names.   This is always required
     tokens = [
-                 'NOTEQUALS',
-                 'NUMBER',
-                 'BOOLEAN',
-                 'ID',
-                 'STRING',
+        'NOTEQUALS',
+        'NUMBER',
+        'BOOLEAN',
+        'ID',
+        'STRING',
+        'COMMENT',
              ] + list(reserved.values())
 
     # Literals.  Should be placed in module given to lex()
@@ -75,7 +76,6 @@ class SQLLexer(object):
 
     # Regular expression rules for simple tokens
     t_NOTEQUALS = '!='
-    t_STRING = r'\'(.*?)\'|"(.*?)"'
 
     # A regular expression rule with some action code
     # Note addition of self parameter since we're in a class
@@ -84,6 +84,10 @@ class SQLLexer(object):
         t.value = int(t.value)
         return t
 
+    def t_STRING(self, t):
+        r"""'(.*?)'|"(.*?)\""""
+        t.value = t.value[1:-1]
+        return t
 
     def t_BOOLEAN(self, t):
         r'[tT][rR][uU][eE]|[fF][aA][lL][sS][eE]'
@@ -105,7 +109,7 @@ class SQLLexer(object):
 
     # A string containing ignored characters (spaces and tabs)
     t_ignore = ' \t'
-    t_ignore_COMMENT = r'//.*'
+    t_COMMENT = r'//.*'
 
     # Error handling rule
     def t_error(self, t):
@@ -137,6 +141,7 @@ if __name__ == "__main__":
     '''
     data = '''
 //测试CREATE DATABASE SHOW DATABASES DROP DATABASE USE DATABASE
+DROP DATABASE XJGL;
 CREATE DATABASE XJGL;
 CREATE DATABASE JUST_FOR_TEST;
 CREATE DATABASE JUST_FOR_TEST;
@@ -192,7 +197,7 @@ SELECT * FROM STUDENT;
 UPDATE STUDENT SET SAGE=27,SSEX=1 WHERE SNAME='ZHANGSAN';
 SELECT * FROM STUDENT;
     '''
-    data = 'true and false sasas exit Quit'
+    data = 'true and false "sasas exit" Quit'
     #data = '1+2 true'
 
     # Build the lexer and try it out
