@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a891a33-6d0d-4beb-81e9-845b1b1f6d19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Functions.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/functions.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SQLInterpreter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DBMS/db.info" afterPath="$PROJECT_DIR$/DBMS/db.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExprNode.py" afterPath="$PROJECT_DIR$/ExprNode.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLLexer.py" afterPath="$PROJECT_DIR$/SQLLexer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Functions.py" afterPath="$PROJECT_DIR$/Functions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLYacc.py" afterPath="$PROJECT_DIR$/SQLYacc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.py" afterPath="$PROJECT_DIR$/functions.py" />
     </list>
     <ignored path="SQLInterpreter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +26,11 @@
     <SUITE FILE_PATH="coverage/SQLInterpreter$LexWords.coverage" NAME="LexWords Coverage Results" MODIFIED="1527499582575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SQLInterpreter$Functions.coverage" NAME="Functions Coverage Results" MODIFIED="1528469657153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SQLInterpreter$SQLLexer.coverage" NAME="SQLLexer Coverage Results" MODIFIED="1528435510994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SQLInterpreter$SQLYacc.coverage" NAME="SQLYacc Coverage Results" MODIFIED="1528470835487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SQLInterpreter$SQLYacc.coverage" NAME="SQLYacc Coverage Results" MODIFIED="1528523369609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SQLInterpreter$testlex.coverage" NAME="testlex Coverage Results" MODIFIED="1527492633200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SQLInterpreter$functions.coverage" NAME="functions Coverage Results" MODIFIED="1528455035781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SQLInterpreter$testYacc.coverage" NAME="testYacc Coverage Results" MODIFIED="1527511312990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SQLInterpreter$SQLInterpreter.coverage" NAME="SQLInterpreter Coverage Results" MODIFIED="1528525498394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -44,8 +44,8 @@
       <file leaf-file-name="SQLLexer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQLLexer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="197" selection-end-column="22" />
+            <state relative-caret-position="4179">
+              <caret line="200" column="22" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="22" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
               </folding>
@@ -56,8 +56,8 @@
       <file leaf-file-name="SQLYacc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQLYacc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
+            <state relative-caret-position="749">
+              <caret line="320" column="18" selection-start-line="320" selection-start-column="18" selection-end-line="320" selection-end-column="18" />
               <folding>
                 <element signature="e#43#66#0" expanded="true" />
               </folding>
@@ -65,11 +65,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SQLInterpreter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQLInterpreter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Functions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="366" column="24" selection-start-line="366" selection-start-column="24" selection-end-line="366" selection-end-column="24" />
+            <state relative-caret-position="206">
+              <caret line="291" column="55" selection-start-line="291" selection-start-column="55" selection-end-line="291" selection-end-column="55" />
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
                 <element signature="e#711#730#0" expanded="false" />
@@ -84,17 +94,16 @@
                 <element signature="e#3834#4274#0" expanded="false" />
                 <element signature="e#4311#4757#0" expanded="false" />
                 <element signature="e#4798#4889#0" expanded="false" />
-                <element signature="e#4941#5699#0" expanded="false" />
-                <element signature="e#5752#6300#0" expanded="false" />
-                <element signature="e#6357#8224#0" expanded="false" />
-                <element signature="e#8266#8669#0" expanded="false" />
-                <element signature="e#8707#9202#0" expanded="false" />
-                <element signature="e#9253#9356#0" expanded="false" />
-                <element signature="e#9412#11454#0" expanded="false" />
-                <element signature="e#11510#13343#0" expanded="false" />
-                <element signature="e#13404#14539#0" expanded="false" />
-                <element signature="e#14850#16756#0" expanded="false" />
-                <element signature="e#16793#16892#0" expanded="false" />
+                <element signature="e#4941#5760#0" expanded="false" />
+                <element signature="e#5813#6361#0" expanded="false" />
+                <element signature="e#6418#8285#0" expanded="false" />
+                <element signature="e#8327#8730#0" expanded="false" />
+                <element signature="e#8768#9263#0" expanded="false" />
+                <element signature="e#9314#9417#0" expanded="false" />
+                <element signature="e#11793#13626#0" expanded="false" />
+                <element signature="e#13687#14822#0" expanded="false" />
+                <element signature="e#15133#17039#0" expanded="false" />
+                <element signature="e#17076#17175#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -103,18 +112,8 @@
       <file leaf-file-name="ExprNode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExprNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parser.out" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50106">
-              <caret line="2567" column="20" selection-start-line="2567" selection-start-column="20" selection-end-line="2567" selection-end-column="20" />
+            <state relative-caret-position="1197">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,11 +138,12 @@
         <option value="$PROJECT_DIR$/testlex.py" />
         <option value="$PROJECT_DIR$/LexWords.py" />
         <option value="$PROJECT_DIR$/testYacc.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/SQLLexer.py" />
         <option value="$PROJECT_DIR$/functions.py" />
         <option value="$PROJECT_DIR$/ExprNode.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/SQLYacc.py" />
+        <option value="$PROJECT_DIR$/SQLInterpreter.py" />
         <option value="$PROJECT_DIR$/Functions.py" />
       </list>
     </option>
@@ -185,6 +185,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -205,16 +215,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -224,7 +224,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.SQLYacc">
+  <component name="RunManager" selected="Python.SQLInterpreter">
     <configuration default="false" name="SQLLexer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,24 +239,6 @@
       <module name="SQLInterpreter" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SQLLexer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="testYacc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SQLInterpreter" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testYacc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -297,7 +279,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="testYacc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -310,7 +292,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SQLInterpreter" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testYacc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SQLInterpreter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SQLInterpreter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SQLInterpreter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -377,7 +377,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SQLInterpreter" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
@@ -525,18 +525,15 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.SQLLexer" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testYacc" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SQLYacc" />
-      <item index="3" class="java.lang.String" itemvalue="Python.functions" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Functions" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SQLYacc" />
+      <item index="2" class="java.lang.String" itemvalue="Python.functions" />
+      <item index="3" class="java.lang.String" itemvalue="Python.testYacc" />
+      <item index="4" class="java.lang.String" itemvalue="Python.SQLInterpreter" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.SQLYacc" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Functions" />
-        <item index="2" class="java.lang.String" itemvalue="Python.functions" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SQLLexer" />
-        <item index="4" class="java.lang.String" itemvalue="Python.testYacc" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.SQLInterpreter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.SQLYacc" />
       </list>
     </recent_temporary>
   </component>
@@ -558,16 +555,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13469985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21693908" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64635956" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64635956" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4294205" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -577,6 +573,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -596,7 +593,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Functions.py</url>
-          <line>310</line>
+          <line>315</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
@@ -608,6 +605,194 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SQLLexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4200">
+          <caret line="200" column="22" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="22" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLYacc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6888">
+          <caret line="328" column="0" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLInterpreter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1617">
+          <caret line="176" column="41" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
+          <folding>
+            <element signature="e#39#48#0" expanded="true" />
+            <element signature="e#711#730#0" expanded="false" />
+            <element signature="e#771#921#0" expanded="false" />
+            <element signature="e#987#1524#0" expanded="false" />
+            <element signature="e#1587#2113#0" expanded="false" />
+            <element signature="e#2163#2409#0" expanded="false" />
+            <element signature="e#2453#2659#0" expanded="false" />
+            <element signature="e#2706#3066#0" expanded="false" />
+            <element signature="e#3111#3483#0" expanded="false" />
+            <element signature="e#3523#3790#0" expanded="false" />
+            <element signature="e#3834#4274#0" expanded="false" />
+            <element signature="e#4311#4757#0" expanded="false" />
+            <element signature="e#4798#4889#0" expanded="false" />
+            <element signature="e#4941#5760#0" expanded="false" />
+            <element signature="e#5813#6361#0" expanded="false" />
+            <element signature="e#6418#8285#0" expanded="false" />
+            <element signature="e#8327#8730#0" expanded="false" />
+            <element signature="e#8768#9263#0" expanded="false" />
+            <element signature="e#9314#9417#0" expanded="false" />
+            <element signature="e#11793#13626#0" expanded="false" />
+            <element signature="e#13687#14822#0" expanded="false" />
+            <element signature="e#15133#17039#0" expanded="false" />
+            <element signature="e#17076#17175#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExprNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLLexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4179">
+          <caret line="200" column="22" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="22" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLYacc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7035">
+          <caret line="338" column="31" selection-start-line="338" selection-start-column="31" selection-end-line="338" selection-end-column="31" />
+          <folding>
+            <element signature="e#43#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1617">
+          <caret line="176" column="41" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
+          <folding>
+            <element signature="e#39#48#0" expanded="true" />
+            <element signature="e#711#730#0" expanded="false" />
+            <element signature="e#771#921#0" expanded="false" />
+            <element signature="e#987#1524#0" expanded="false" />
+            <element signature="e#1587#2113#0" expanded="false" />
+            <element signature="e#2163#2409#0" expanded="false" />
+            <element signature="e#2453#2659#0" expanded="false" />
+            <element signature="e#2706#3066#0" expanded="false" />
+            <element signature="e#3111#3483#0" expanded="false" />
+            <element signature="e#3523#3790#0" expanded="false" />
+            <element signature="e#3834#4274#0" expanded="false" />
+            <element signature="e#4311#4757#0" expanded="false" />
+            <element signature="e#4798#4889#0" expanded="false" />
+            <element signature="e#4941#5760#0" expanded="false" />
+            <element signature="e#5813#6361#0" expanded="false" />
+            <element signature="e#6418#8285#0" expanded="false" />
+            <element signature="e#8327#8730#0" expanded="false" />
+            <element signature="e#8768#9263#0" expanded="false" />
+            <element signature="e#9314#9417#0" expanded="false" />
+            <element signature="e#11793#13626#0" expanded="false" />
+            <element signature="e#13687#14822#0" expanded="false" />
+            <element signature="e#15133#17039#0" expanded="false" />
+            <element signature="e#17076#17175#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExprNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLLexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4200">
+          <caret line="200" column="22" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="22" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLYacc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1617">
+          <caret line="176" column="41" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
+          <folding>
+            <element signature="e#39#48#0" expanded="true" />
+            <element signature="e#711#730#0" expanded="false" />
+            <element signature="e#771#921#0" expanded="false" />
+            <element signature="e#987#1524#0" expanded="false" />
+            <element signature="e#1587#2113#0" expanded="false" />
+            <element signature="e#2163#2409#0" expanded="false" />
+            <element signature="e#2453#2659#0" expanded="false" />
+            <element signature="e#2706#3066#0" expanded="false" />
+            <element signature="e#3111#3483#0" expanded="false" />
+            <element signature="e#3523#3790#0" expanded="false" />
+            <element signature="e#3834#4274#0" expanded="false" />
+            <element signature="e#4311#4757#0" expanded="false" />
+            <element signature="e#4798#4889#0" expanded="false" />
+            <element signature="e#4941#5760#0" expanded="false" />
+            <element signature="e#5813#6361#0" expanded="false" />
+            <element signature="e#6418#8285#0" expanded="false" />
+            <element signature="e#8327#8730#0" expanded="false" />
+            <element signature="e#8768#9263#0" expanded="false" />
+            <element signature="e#9314#9417#0" expanded="false" />
+            <element signature="e#11793#13626#0" expanded="false" />
+            <element signature="e#13687#14822#0" expanded="false" />
+            <element signature="e#15133#17039#0" expanded="false" />
+            <element signature="e#17076#17175#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ExprNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SQLLexer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3108">
@@ -646,17 +831,16 @@
             <element signature="e#3834#4274#0" expanded="false" />
             <element signature="e#4311#4757#0" expanded="false" />
             <element signature="e#4798#4889#0" expanded="false" />
-            <element signature="e#4941#5699#0" expanded="false" />
-            <element signature="e#5752#6300#0" expanded="false" />
-            <element signature="e#6357#8224#0" expanded="false" />
-            <element signature="e#8266#8669#0" expanded="false" />
-            <element signature="e#8707#9202#0" expanded="false" />
-            <element signature="e#9253#9356#0" expanded="false" />
-            <element signature="e#9412#11454#0" expanded="false" />
-            <element signature="e#11510#13343#0" expanded="false" />
-            <element signature="e#13404#14539#0" expanded="false" />
-            <element signature="e#14850#16756#0" expanded="false" />
-            <element signature="e#16793#16892#0" expanded="false" />
+            <element signature="e#4941#5760#0" expanded="false" />
+            <element signature="e#5813#6361#0" expanded="false" />
+            <element signature="e#6418#8285#0" expanded="false" />
+            <element signature="e#8327#8730#0" expanded="false" />
+            <element signature="e#8768#9263#0" expanded="false" />
+            <element signature="e#9314#9417#0" expanded="false" />
+            <element signature="e#11793#13626#0" expanded="false" />
+            <element signature="e#13687#14822#0" expanded="false" />
+            <element signature="e#15133#17039#0" expanded="false" />
+            <element signature="e#17076#17175#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -673,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,9 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -725,17 +905,16 @@
             <element signature="e#3834#4274#0" expanded="false" />
             <element signature="e#4311#4757#0" expanded="false" />
             <element signature="e#4798#4889#0" expanded="false" />
-            <element signature="e#4941#5699#0" expanded="false" />
-            <element signature="e#5752#6300#0" expanded="false" />
-            <element signature="e#6357#8224#0" expanded="false" />
-            <element signature="e#8266#8669#0" expanded="false" />
-            <element signature="e#8707#9202#0" expanded="false" />
-            <element signature="e#9253#9356#0" expanded="false" />
-            <element signature="e#9412#11454#0" expanded="false" />
-            <element signature="e#11510#13343#0" expanded="false" />
-            <element signature="e#13404#14539#0" expanded="false" />
-            <element signature="e#14850#16756#0" expanded="false" />
-            <element signature="e#16793#16892#0" expanded="false" />
+            <element signature="e#4941#5760#0" expanded="false" />
+            <element signature="e#5813#6361#0" expanded="false" />
+            <element signature="e#6418#8285#0" expanded="false" />
+            <element signature="e#8327#8730#0" expanded="false" />
+            <element signature="e#8768#9263#0" expanded="false" />
+            <element signature="e#9314#9417#0" expanded="false" />
+            <element signature="e#11793#13626#0" expanded="false" />
+            <element signature="e#13687#14822#0" expanded="false" />
+            <element signature="e#15133#17039#0" expanded="false" />
+            <element signature="e#17076#17175#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,9 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,9 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,9 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,9 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -919,15 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="3436" column="0" selection-start-line="3436" selection-start-column="0" selection-end-line="3436" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,32 +1088,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50106">
           <caret line="2567" column="20" selection-start-line="2567" selection-start-column="20" selection-end-line="2567" selection-end-column="20" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="106" column="6" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ExprNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="1197">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SQLLexer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="197" selection-end-column="22" />
+        <state relative-caret-position="4179">
+          <caret line="200" column="22" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="22" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SQLInterpreter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SQLYacc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="341" column="18" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
+        <state relative-caret-position="749">
+          <caret line="320" column="18" selection-start-line="320" selection-start-column="18" selection-end-line="320" selection-end-column="18" />
           <folding>
             <element signature="e#43#66#0" expanded="true" />
           </folding>
@@ -969,8 +1136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="366" column="24" selection-start-line="366" selection-start-column="24" selection-end-line="366" selection-end-column="24" />
+        <state relative-caret-position="206">
+          <caret line="291" column="55" selection-start-line="291" selection-start-column="55" selection-end-line="291" selection-end-column="55" />
           <folding>
             <element signature="e#39#48#0" expanded="true" />
             <element signature="e#711#730#0" expanded="false" />
@@ -985,17 +1152,16 @@
             <element signature="e#3834#4274#0" expanded="false" />
             <element signature="e#4311#4757#0" expanded="false" />
             <element signature="e#4798#4889#0" expanded="false" />
-            <element signature="e#4941#5699#0" expanded="false" />
-            <element signature="e#5752#6300#0" expanded="false" />
-            <element signature="e#6357#8224#0" expanded="false" />
-            <element signature="e#8266#8669#0" expanded="false" />
-            <element signature="e#8707#9202#0" expanded="false" />
-            <element signature="e#9253#9356#0" expanded="false" />
-            <element signature="e#9412#11454#0" expanded="false" />
-            <element signature="e#11510#13343#0" expanded="false" />
-            <element signature="e#13404#14539#0" expanded="false" />
-            <element signature="e#14850#16756#0" expanded="false" />
-            <element signature="e#16793#16892#0" expanded="false" />
+            <element signature="e#4941#5760#0" expanded="false" />
+            <element signature="e#5813#6361#0" expanded="false" />
+            <element signature="e#6418#8285#0" expanded="false" />
+            <element signature="e#8327#8730#0" expanded="false" />
+            <element signature="e#8768#9263#0" expanded="false" />
+            <element signature="e#9314#9417#0" expanded="false" />
+            <element signature="e#11793#13626#0" expanded="false" />
+            <element signature="e#13687#14822#0" expanded="false" />
+            <element signature="e#15133#17039#0" expanded="false" />
+            <element signature="e#17076#17175#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -324,22 +324,7 @@ def p_variable(p):
 
 # Error rule for syntax errors
 def p_error(p):
-    print("SQL: %s" % (p), end='  ')
-    print("Syntax error in input!")
+    print("SQLError: Syntax error!")
 
 
-if __name__ == "__main__":
-    # Build the parser
-    parser = yacc.yacc()
-
-    while True:
-        try:
-            s = input('> ')
-        except EOFError:
-            break
-        if not s:
-            continue
-        # print(s)
-        parser.parse(s)
-        operations.exec_queue()
-        # print(result)
+parser = yacc.yacc()

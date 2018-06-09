@@ -158,6 +158,7 @@ class Functions(object):
                 table_info.write(info)
             path = self.currentdb+"/"+name+".txt"
             open(path, mode="w", encoding="UTF-8").close()
+            print("Successfully created table '%s'." % name)
         else:
             raise SQLException("SQLError: table '%s' already exists!" % name)
 
@@ -284,7 +285,11 @@ class Functions(object):
         self.del_table_cache()
         # print("all_column_names: %s, result_set: %s" % (str(all_column_names), str(result_set)))
         if select_columns != '*':
-            for column in all_column_names:
+            # print("   select_columns: %s" % str(select_columns))
+            # print("   all_column_names: %s" % str(all_column_names))
+            cp = all_column_names.copy()
+            for column in cp:
+                # print("     column: %s" % str(column))
                 if column not in select_columns:
                     index = all_column_names.index(column)
                     for i in range(len(result_set)):

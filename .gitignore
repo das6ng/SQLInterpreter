@@ -103,9 +103,13 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# pycharm info
+.idea/
+
 #PLY out temp files
 parsetab.py
 *.out
 
 #test outputs
+testSQL.txt
 DBMS/*/
