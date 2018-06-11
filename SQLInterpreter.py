@@ -13,8 +13,8 @@ if __name__ == "__main__":
 +-----------------------+
 |  Welcome to DashSQL!  |
 |         ^_^           |
-|  @Author: Dash Wong   |
 |  <dashengyeah@github> |
+|  @Author: Dash Wong   |
 |            2018/06/08 |
 +-----------------------+
     '''

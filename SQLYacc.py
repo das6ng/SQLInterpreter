@@ -18,7 +18,7 @@ precedence = (
     ('left', 'AND'),
     ('right', 'NOT'),
     ('left', '=', 'NOTEQUALS'),
-    ('left', '>', '<'),
+    ('nonassoc', '>', '<'),
     ('left', '+', '-'),
     ('left', '*', '/'),
     ('right', '-'),

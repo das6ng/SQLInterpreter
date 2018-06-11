@@ -197,7 +197,7 @@ SELECT * FROM STUDENT;
 UPDATE STUDENT SET SAGE=27,SSEX=1 WHERE SNAME='ZHANGSAN';
 SELECT * FROM STUDENT;
     '''
-    data = 'true and false "sasas exit" Quit'
+    #data = 'true and false "sasas exit" Quit'
     #data = '1+2 true'
 
     # Build the lexer and try it out
